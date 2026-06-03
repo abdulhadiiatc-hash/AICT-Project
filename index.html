@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- 
+  DOCTYPE tells the browser this is a modern HTML5 file.
+  Always put this at the very top.
+-->
+<html lang="en">
+<!--
+  <html> is the root (container) of the whole page.
+  lang="en" tells search engines and screen readers the language.
+-->
+
+<head>
+  <!--
+    <head> holds information ABOUT the page.
+    Nothing inside <head> is shown on the screen.
+  -->
+
+  <!-- Character set – lets us use letters from all languages -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the page look correct on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Title shown on the browser tab -->
+  <title>Travels Air Touch – Home</title>
+
+  <!-- Link to our external CSS file (same folder) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome CDN – gives us icons like planes, stars, etc. -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!--
+    <body> is everything the visitor SEES on the page.
+  -->
+
+  <!-- ======================================================
+       NAVIGATION BAR
+       <nav>  = navigation element
+       <ul>   = unordered list (bullet list)
+       <li>   = list item
+       <a>    = anchor / link   href="" = where to go
+  ====================================================== -->
+  <nav>
+    <div class="nav-logo">
+      <!--
+        To use YOUR logo image, replace "logo.png" with your file name.
+        Keep your logo file in the same folder as this HTML file.
+        Example: <img src="airtouch-logo.jpg" alt="Travels Air Touch logo">
+      -->
+      <img src="logo.png" alt="Travels Air Touch Logo"
+           onerror="this.style.display='none'">
+      <span>Travels Air Touch</span>
+    </div>
+
+    <ul class="nav-links">
+      <!-- class="active" highlights the current page link -->
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="hajj-umrah.html">Hajj &amp; Umrah</a></li>
+      <li><a href="international.html">International</a></li>
+      <li><a href="domestic.html">Domestic</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact &amp; Booking</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======================================================
+       HERO BANNER
+       background-image uses a free Unsplash photo URL.
+       We set it here as an inline style so each page can
+       have a different banner photo while still using the
+       same CSS class.
+  ====================================================== -->
+  <section class="hero"
+    style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80');">
+    <h1>Discover the World with Travels Air Touch</h1>
+    <p>International tours, domestic adventures, and complete Hajj &amp; Umrah packages — all in one place.</p>
+    <a href="contact.html" class="btn">Book a Package</a>
+  </section>
+
+  <!-- ======================================================
+       INTRODUCTION SECTION
+  ====================================================== -->
+  <section class="section">
+    <h2 class="section-title">Welcome to Travels Air Touch</h2>
+    <p class="section-subtitle">Your trusted travel partner for every journey</p>
+
+    <p class="company-bio">
+      Travels Air Touch is a Lahore-based travel and tourism company dedicated to making every trip
+      smooth, memorable, and affordable. Whether you are planning a spiritual journey for Hajj or Umrah,
+      exploring the breathtaking beauty of Pakistan, or heading abroad for a dream holiday — we have the
+      right package for you. Our experienced team handles everything from visa processing to hotel
+      bookings so you can focus on enjoying the journey.
+    </p>
+
+    <!-- Statistics row -->
+    <div class="stats-row">
+      <div class="stat-box">
+        <h2>1000+</h2>
+        <p>Happy Travellers</p>
+      </div>
+      <div class="stat-box">
+        <h2>25+</h2>
+        <p>Destinations</p>
+      </div>
+      <div class="stat-box">
+        <h2>20+</h2>
+        <p>Years Experience</p>
+      </div>
+      <div class="stat-box">
+        <h2>95%</h2>
+        <p>Visa Success Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======================================================
+       QUICK OVERVIEW CARDS (3 main service areas)
+  ====================================================== -->
+  <section class="section">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Everything you need for a perfect trip</p>
+
+    <div class="overview-grid">
+
+      <!-- Card 1 – Hajj & Umrah -->
+      <div class="overview-box">
+        <i class="fa-solid fa-kaaba"></i>
+        <h3>Hajj &amp; Umrah Packages</h3>
+        <p>
+          Complete Economy, Standard and Premium packages for Hajj and Umrah.
+          Includes visa processing, flights, hotel and guided tours.
+        </p>
+        <a href="hajj-umrah.html" class="btn">View Packages</a>
+      </div>
+
+      <!-- Card 2 – International Tours -->
+      <div class="overview-box">
+        <i class="fa-solid fa-plane"></i>
+        <h3>International Tours</h3>
+        <p>
+          Explore Turkey, Malaysia, Thailand, UAE, UK and many more
+          destinations with our all-inclusive holiday packages.
+        </p>
+        <a href="international.html" class="btn">Explore</a>
+      </div>
+
+      <!-- Card 3 – Domestic Tours -->
+      <div class="overview-box">
+        <i class="fa-solid fa-mountain-sun"></i>
+        <h3>Domestic Tours</h3>
+        <p>
+          Discover the beauty of Pakistan — Hunza, Swat, Murree, Lahore,
+          Karachi and more. Summer and winter packages available.
+        </p>
+        <a href="domestic.html" class="btn">Explore</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ======================================================
+       FEATURED PACKAGES SECTION
+  ====================================================== -->
+  <section class="section">
+    <h2 class="section-title">Featured Packages</h2>
+    <p class="section-subtitle">Most popular tours chosen by our customers</p>
+
+    <div class="cards-grid">
+
+      <!-- Featured Package 1 -->
+      <div class="card">
+        <img class="card-img"
+             src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=400&q=75"
+             alt="Mecca Umrah Package">
+        <div class="card-body">
+          <span class="card-badge"><i class="fa-solid fa-star"></i> Popular</span>
+          <h3>Umrah – Ramadan Special</h3>
+          <p>10 nights · Mecca &amp; Madinah · 5-star hotels · Guided ziyarat</p>
+          <p class="card-price">Starting PKR 500,000</p>
+          <a href="hajj-umrah.html" class="btn btn-outline mt-20">Details</a>
+        </div>
+      </div>
+
+      <!-- Featured Package 2 -->
+      <div class="card">
+        <img class="card-img"
+             src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&q=75"
+             alt="Istanbul Turkey Tour">
+        <div class="card-body">
+          <span class="card-badge">International</span>
+          <h3>Istanbul, Turkey – 7 Nights</h3>
+          <p>7 nights · Flights + hotel + city tour · Hagia Sophia &amp; Bosphorus</p>
+          <p class="card-price">Starting PKR 280,000</p>
+          <a href="international.html" class="btn btn-outline mt-20">Details</a>
+        </div>
+      </div>
+
+      <!-- Featured Package 3 -->
+      <div class="card">
+        <img class="card-img"
+             src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400&q=75"
+             alt="Hunza Valley Pakistan">
+        <div class="card-body">
+          <span class="card-badge">Domestic</span>
+          <h3>Hunza Valley – 5 Nights</h3>
+          <p>5 nights · Gilgit-Baltistan · Rakaposhi view · Hotel &amp; transport</p>
+          <p class="card-price">Starting PKR 45,000</p>
+          <a href="domestic.html" class="btn btn-outline mt-20">Details</a>
+        </div>
+      </div>
+
+      <!-- Featured Package 4 -->
+      <div class="card">
+        <img class="card-img"
+             src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=400&q=75"
+             alt="Kuala Lumpur Malaysia">
+        <div class="card-body">
+          <span class="card-badge">International</span>
+          <h3>Kuala Lumpur, Malaysia – 6 Nights</h3>
+          <p>6 nights · Petronas Towers · Batu Caves · Beach day trip</p>
+          <p class="card-price">Starting PKR 220,000</p>
+          <a href="international.html" class="btn btn-outline mt-20">Details</a>
+        </div>
+      </div>
+
+    </div><!-- end cards-grid -->
+
+    <!-- CTA button -->
+    <div class="text-center mt-20">
+      <a href="contact.html" class="btn">Inquire About Any Package</a>
+    </div>
+
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       <footer> is the bottom section of the page.
+  ====================================================== -->
+  <footer>
+    <div class="footer-content">
+
+      <div class="footer-col">
+        <h4>Travels Air Touch</h4>
+        <p>Your trusted travel partner for<br>international, domestic and<br>religious tourism.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="hajj-umrah.html">Hajj &amp; Umrah</a></li>
+          <li><a href="international.html">International Tours</a></li>
+          <li><a href="domestic.html">Domestic Tours</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact &amp; Booking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <p><i class="fa-solid fa-location-dot"></i> Lahore, Pakistan</p>
+        <p><i class="fa-solid fa-phone"></i> +92-300-4305188</p>
+        <p><i class="fa-solid fa-envelope"></i> info@travelsairtouch.com</p>
+        <p><i class="fa-solid fa-clock"></i> Mon – Sat: 9am – 6pm</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Travels Air Touch. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
